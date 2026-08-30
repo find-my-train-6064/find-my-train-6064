@@ -1,0 +1,7 @@
+function startApp() {
+
+    alert("Welcome to Find My Train!");
+
+Next page later connect செய்யலாம்
+window.location.href="login.html";
+}
