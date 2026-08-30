@@ -1,0 +1,668 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    min-height: 100vh;
+    color: white;
+    overflow-x: hidden;
+
+    /* LAPTOP BACKGROUND */
+    background-image:
+        linear-gradient(
+            rgba(0, 35, 80, 0.35),
+            rgba(0, 15, 45, 0.55)
+        ),
+        url("BACKGROUND.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 80px;
+
+    padding: 50px;
+}
+
+
+/* =========================================
+   LEFT SECTION
+========================================= */
+
+.left-section {
+    width: 430px;
+}
+
+
+/* =========================================
+   LEFT TITLE
+========================================= */
+
+.left-section h1 {
+    font-size: 45px;
+
+    margin-top: 30px;
+
+    line-height: 1.1;
+
+    text-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================
+   LEFT DESCRIPTION
+========================================= */
+
+.left-section > p {
+    font-size: 20px;
+
+    margin-top: 10px;
+
+    color: #d9e8ff;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features {
+    margin-top: 35px;
+}
+
+
+.features div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin: 22px 0;
+
+    font-size: 30px;
+}
+
+
+.features span {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.features b {
+    font-size: 18px;
+
+    color: white;
+}
+
+
+.features small {
+    font-size: 14px;
+
+    color: #c7d8ee;
+
+    margin-top: 5px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   LOGIN TITLE
+========================================= */
+
+.login-section h2 {
+    font-size: 38px;
+
+    margin-top: 5px;
+
+    line-height: 1.2;
+}
+
+
+.login-section > p {
+    color: #d6e5f8;
+
+    margin: 8px 0 25px;
+
+    font-size: 17px;
+}
+
+
+/* =========================================
+   LOGIN BOX
+========================================= */
+
+.login-box {
+    width: 100%;
+
+    background: rgba(0, 35, 80, 0.78);
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    text-align: left;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.30);
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.login-box label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 17px;
+
+    color: white;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.login-box input {
+    width: 100%;
+
+    height: 58px;
+
+    padding: 0 18px;
+
+    margin-bottom: 22px;
+
+    border-radius: 10px;
+
+    border: 2px solid #7898bd;
+
+    background: rgba(52, 91, 135, 0.75);
+
+    color: white;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.25s;
+}
+
+
+/* INPUT PLACEHOLDER */
+
+.login-box input::placeholder {
+    color: #c2d0df;
+}
+
+
+/* INPUT FOCUS */
+
+.login-box input:focus {
+    border-color: #5ca7ff;
+
+    background: rgba(60, 105, 155, 0.85);
+
+    box-shadow:
+        0 0 0 3px rgba(40, 130, 255, 0.15);
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-box button {
+    width: 100%;
+
+    height: 58px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #1675e8;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.login-box button:hover {
+    background: #0d5fc5;
+
+    transform: translateY(-2px);
+}
+
+
+.login-box button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================
+   SIGN UP
+========================================= */
+
+.signup {
+    text-align: center;
+
+    margin-top: 28px;
+
+    color: #d5e3f4;
+
+    font-size: 16px;
+}
+
+
+.signup b {
+    color: white;
+
+    cursor: pointer;
+}
+
+
+.signup b:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    margin-top: 45px;
+
+    color: #c7d7ea;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .container {
+        gap: 40px;
+
+        padding: 40px 25px;
+    }
+
+    .left-section {
+        width: 40%;
+    }
+
+    .login-section {
+        width: 50%;
+        max-width: 470px;
+    }
+
+    .left-section h1 {
+        font-size: 38px;
+    }
+
+}
+
+
+/* =========================================
+   ANDROID / MOBILE - FULL SCREEN
+========================================= */
+
+@media screen and (max-width: 767px) {
+
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-height: 100vh;
+
+        background-image:
+            linear-gradient(
+                rgba(0, 40, 100, 0.15),
+                rgba(0, 20, 60, 0.35)
+            ),
+            url("BACKGROUND.jpeg");
+
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+
+        overflow-x: hidden;
+    }
+
+
+    /* =====================================
+       MAIN CONTAINER
+    ===================================== */
+
+    .container {
+        width: 100%;
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 25px;
+
+        padding: 30px 16px 40px;
+
+        margin: 0;
+    }
+
+
+    /* =====================================
+       LOGIN SECTION FIRST
+    ===================================== */
+
+    .login-section {
+        width: 100%;
+        max-width: none;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        order: 1;
+    }
+
+
+    /* =====================================
+       LOGIN TITLE
+    ===================================== */
+
+    .login-section h2 {
+        width: 100%;
+
+        font-size: 30px;
+
+        line-height: 1.15;
+
+        margin: 0;
+    }
+
+
+    .login-section > p {
+        width: 100%;
+
+        font-size: 15px;
+
+        margin: 8px 0 20px;
+
+        line-height: 1.4;
+    }
+
+
+    /* =====================================
+       LOGIN BOX
+    ===================================== */
+
+    .login-box {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 25px 20px;
+
+        margin: 0;
+
+        border-radius: 18px;
+
+        background: rgba(0, 35, 80, 0.78);
+
+        box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.35);
+
+        text-align: left;
+    }
+
+
+    /* =====================================
+       LABEL
+    ===================================== */
+
+    .login-box label {
+        display: block;
+
+        width: 100%;
+
+        font-size: 17px;
+
+        margin-bottom: 8px;
+    }
+
+
+    /* =====================================
+       INPUT
+    ===================================== */
+
+    .login-box input {
+        width: 100%;
+        height: 58px;
+
+        padding: 0 16px;
+
+        margin-bottom: 20px;
+
+        border-radius: 10px;
+
+        border: 2px solid #7898bd;
+
+        background: rgba(52, 91, 135, 0.75);
+
+        color: white;
+
+        font-size: 16px;
+
+        outline: none;
+    }
+
+
+    .login-box input::placeholder {
+        color: #c2d0df;
+    }
+
+
+    /* =====================================
+       LOGIN BUTTON
+    ===================================== */
+
+    .login-box button {
+        width: 100%;
+        height: 58px;
+
+        border: none;
+        border-radius: 10px;
+
+        background: #1675e8;
+
+        color: white;
+
+        font-size: 18px;
+        font-weight: bold;
+
+        cursor: pointer;
+    }
+
+
+    /* =====================================
+       SIGN UP
+    ===================================== */
+
+    .signup {
+        width: 100%;
+
+        text-align: center;
+
+        margin-top: 22px;
+
+        font-size: 15px;
+
+        line-height: 1.5;
+    }
+
+
+    /* =====================================
+       FEATURES
+    ===================================== */
+
+    .left-section {
+        width: 100%;
+        max-width: none;
+
+        order: 2;
+
+        text-align: left;
+    }
+
+    .left-section h1 {
+        font-size: 30px;
+
+        text-align: center;
+
+        margin-top: 18px;
+    }
+
+
+    .left-section > p {
+        font-size: 15px;
+
+        text-align: center;
+
+        margin-top: 8px;
+    }
+
+
+    /* =====================================
+       FEATURES LIST
+    ===================================== */
+
+    .features {
+        width: 100%;
+
+        margin-top: 25px;
+
+        text-align: left;
+    }
+
+
+    .feature-item {
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 14px;
+
+        margin: 16px 0;
+    }
+
+
+    .feature-icon {
+        min-width: 35px;
+
+        font-size: 25px;
+
+        text-align: center;
+    }
+
+
+    .feature-item span {
+        display: flex;
+
+        flex-direction: column;
+    }
+
+
+    .feature-item b {
+        font-size: 16px;
+    }
+
+
+    .feature-item small {
+        font-size: 12px;
+
+        margin-top: 3px;
+
+        color: #c7d8ee;
+
+        line-height: 1.4;
+    }
+
+
+    /* =====================================
+       FOOTER
+    ===================================== */
+
+    footer {
+        margin-top: 25px;
+
+        font-size: 13px;
+
+        text-align: center;
+    }
+}
